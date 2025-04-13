@@ -20,6 +20,7 @@
     16. https://github.com/SebaM/Workshop_PyTest_Hypo  <-- your working repositories
 17. Open cloned project in your IDE eg. PyCharm:
     18. some IDE are asking if create virtual env automatically, say *Yes*
+    19. or ![update project settings](./images/venv.png)
 19. Go to project *ShoPen*
     20. check ReadMe.md file and proceed
     20. check if dependency have been installed:
