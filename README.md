@@ -32,10 +32,31 @@
     27. Check ReadMe.md
     28. Check if you are working in virtual environment
     28. Check dependency and install if missing
+    29. You can mark folders:
+        30. source as source root
+        31. tests as test root
 29. Commit local changes
 30. Do checkout of next branch ex1_calculator
 ## Unit Testing and First steps w/ PyTest
 1. install pytest from requirements
+   `pip install -r requirements.txt`
+2. Run PyTest first time and check names and assertions
+   ```
+   pytest  tests/ex1_1_test.py
+   py.test  tests/ex1_1_test.py
+   ```
+3. Now proceed in order, if test is failing fix it first:
+   ```
+    pytest  tests/ex1_2_test.py
+    pytest  tests/ex1_3_test.py
+    pytest -s  tests/ex1_3_test.py
+    pytest -v  tests/ex1_3_test.py
+    pytest -v tests/ex1_4_test.py
+    pytest -v tests/ex1_5_0_test.py
+    pytest -v tests/ex1_5_1_test.py
+    pytest -v -m "not negative" tests/ex1_5_1_test.py
+    pytest -v tests/ex1_6_test.py
+   ```
 
 # Other important info
 ## Semantic Commit Messages
