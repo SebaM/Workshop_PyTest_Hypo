@@ -23,8 +23,17 @@
     pytest -v -m "not negative" tests/ex1_5_1_test.py
     pytest -v tests/ex1_6_test.py
    ```
+3. Do exercise from ex1_7:
+   ```
+   pytest -v tests/ex1_6_test.py
+   ```
 4. Commit local changes 
 5. Do checkout of next branch ex2_parametrize
+
+References:
+
+- https://docs.pytest.org/en/stable/index.html
+- https://github.com/pytest-dev/pytest
 
 # Other important info
 ## Semantic Commit Messages
