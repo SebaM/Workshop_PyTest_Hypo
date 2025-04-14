@@ -10,8 +10,11 @@
 ### TODO:
 1. install pytest from requirements
    `pip install -r requirements.txt`
-2. 
+2. Show simple GETpytest -rA
+   ```
+   pytest -rA -v tests/ex3/ex3_1_test.py
+   ```
 
 References:
 
-- https://hypothesis.readthedocs.io/en/latest/
+- http://localhost:8000/
