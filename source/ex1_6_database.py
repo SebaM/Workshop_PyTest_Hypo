@@ -21,5 +21,5 @@ class Database:
             return True
 
     def clean(self):
-        # self.users = {}
-        pass
+        self.users = {}
+        # pass

@@ -3,61 +3,39 @@
 ## Initial setup
  *Done*
 ## Unit Testing and First steps w/ PyTest
+ *Done*
+## Chosen advanced aspects of PyTest & Hypothesis
 ### TODO:
+1. Now proceed in order, if test is failing fix it first, uncomment 1st block of code (--):
+   ```
+    pytest -v tests/ex1
+    pytest -v tests/ex2/ex2_1_test.py
+   ```
+   How many defects you have found?
+3. Use ChatGPT or some other LLM to generate more cases:
+   ```
+   I have somple method in python that adds two digits. Pls propose me
+   code of PyTest with parametrize feature that would test this method.
+   ```
+   next add cases proposed by it to the scope of testing. In case of lack connection uncomment next block of code (--). 
+   work in file:
+   ```
+   pytest -v tests/ex2/ex2_2_test.py
+   ```
+   How many defects you have found?
+4. Write your own test checking if amount is enough to get discount.
 1. install pytest from requirements
    `pip install -r requirements.txt`
-2. Run PyTest first time and check names and assertions
+2. Working w/ next test, start from launching it:
    ```
-   pytest  tests/ex1_1_test.py
-   py.test  tests/ex1_1_test.py
+   pytest -v tests/ex2/ex2_3_test.py
    ```
-3. Now proceed in order, if test is failing fix it first:
-   ```
-    pytest  tests/ex1_2_test.py
-    pytest  tests/ex1_3_test.py
-    pytest -s  tests/ex1_3_test.py
-    pytest -v  tests/ex1_3_test.py
-    pytest -v tests/ex1_4_test.py
-    pytest -v tests/ex1_5_0_test.py
-    pytest -v tests/ex1_5_1_test.py
-    pytest -v -m "not negative" tests/ex1_5_1_test.py
-    pytest -v tests/ex1_6_test.py
-   ```
+   Uncomment block and test and correct method.
+3. Uncomment next block and define your own first strategy.
+4. Try to test negative case as well.
 4. Commit local changes 
-5. Do checkout of next branch ex2_parametrize
-
-# Other important info
-## Semantic Commit Messages
-
-See how a minor change to your commit message style can make you a better programmer.
-
-Format: `<type>(<scope>): <subject>`
-
-`<scope>` is optional
-
-## Example
-
-```
-feat: add hat wobble
-^--^  ^------------^
-|     |
-|     +-> Summary in present tense.
-|
-+-------> Type: chore, docs, feat, fix, refactor, style, or test.
-```
-
-More Examples:
-
-- `feat`: (new feature for the user, not a new feature for build script)
-- `fix`: (bug fix for the user, not a fix to a build script)
-- `docs`: (changes to the documentation)
-- `style`: (formatting, missing semi colons, etc; no production code change)
-- `refactor`: (refactoring production code, eg. renaming a variable)
-- `test`: (adding missing tests, refactoring tests; no production code change)
-- `chore`: (updating grunt tasks etc; no production code change)
+5. Do checkout of next branch ex3_rest
 
 References:
 
-- https://www.conventionalcommits.org/
-- https://seesparkbox.com/foundry/semantic_commit_messages
-- http://karma-runner.github.io/1.0/dev/git-commit-msg.html
+- https://hypothesis.readthedocs.io/en/latest/
