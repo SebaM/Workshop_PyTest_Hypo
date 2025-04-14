@@ -1,4 +1,5 @@
 from source.ex2_1_calculator import add as ex2_1_add
+import pytest
 
 
 def test_add() -> None:
@@ -8,10 +9,10 @@ def test_add() -> None:
 
 
 # --------------------------------------------------------------------
-# @pytest.mark.parametrize("num1, num2, result", [
-#     (2, 3, 5),
-#     (-1, 1),
-#     (...),
-# ])
-# def test_add_parametrize(num1, num2, result) -> None:
-#     assert ex2_1_add(num1, num2) == result
+@pytest.mark.parametrize("num1, num2, result", [
+    (2, 3, 5),
+    (-1, 1, 0),
+    (0, 1, 1),
+])
+def test_add_parametrize(num1, num2, result) -> None:
+    assert ex2_1_add(num1, num2) == result

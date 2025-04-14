@@ -10,14 +10,14 @@ def is_even(num):
 
 
 def add(given_1, given_2):
-    if type(given_1) is not int:
-        raise ValueError("Unsupported type for given value")
+    # if type(given_1) is not int:
+    #     raise ValueError("Unsupported type for given value")
     has_three_or_more = lambda num: len(str(num).split('.')[1]) >= 3 if '.' in str(num) else False
     if has_three_or_more(given_2):
         print(has_three_or_more(given_2))
         raise ValueError("For currency I can not have more than 1 cent")
-    if is_even(given_1) and is_even(given_2):
-        raise ValueError("Both are even, how come?!")
+    # if is_even(given_1) and is_even(given_2):
+    #     raise ValueError("Both are even, how come?!")
     return given_1 + given_2
 
 
