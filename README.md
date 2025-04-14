@@ -20,7 +20,6 @@
     16. https://github.com/SebaM/Workshop_PyTest_Hypo  <-- your working repositories
 17. Open cloned project in your IDE eg. PyCharm:
     18. some IDE are asking if create virtual env automatically, say *Yes*
-    19. or ![update project settings](./images/venv.png)
 19. Go to project *ShoPen*
     20. check ReadMe.md file and proceed
     20. check if dependency have been installed:
@@ -33,5 +32,8 @@
     27. Check ReadMe.md
     28. Check if you are working in virtual environment
     28. Check dependency and install if missing
+    29. You can mark folders:
+        30. source as source root
+        31. tests as test root
 29. Commit local changes
 30. Do checkout of next branch ex1_calculator
