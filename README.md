@@ -3,6 +3,7 @@
 ## Initial setup
  *Done*
 ## Unit Testing and First steps w/ PyTest
+### TODO:
 1. install pytest from requirements
    `pip install -r requirements.txt`
 2. Run PyTest first time and check names and assertions
