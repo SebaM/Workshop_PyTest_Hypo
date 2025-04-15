@@ -7,6 +7,7 @@
 3. active/deactivate virtual env and remove it
 4. download and install or turn on your favorite IDE eg.:
    5. vi/vim
+   6. kkk
    6. any test editor
    7. PyCharm https://www.jetbrains.com/pycharm/
    8. Visual Studio Code https://code.visualstudio.com/
@@ -34,6 +35,6 @@
     28. Check dependency and install if missing
     29. You can mark folders:
         30. source as source root
-        31. tests as test root
+        31. tests as te
 29. Commit local changes
 30. Do checkout of next branch ex1_calculator
